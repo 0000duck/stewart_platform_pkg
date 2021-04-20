@@ -10,4 +10,4 @@ ROS2 package for the Stewart Platform BSc. project at University of Agder, Mecha
 
 This package includes all the ROS2 (Python and C++) nodes used in this project.
 
-HMI/GUI, kinematics and CANbus.
+HMI/GUI, kinematics and CAN-bus.
