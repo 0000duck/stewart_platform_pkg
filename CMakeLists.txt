@@ -22,10 +22,6 @@ find_package(Qt5Quick REQUIRED)
 find_package(Qt5 COMPONENTS Core REQUIRED)
 find_package(stewart_platform_interfaces REQUIRED)
 
-if(rclcpp_VERSION_MAJOR GREATER_EQUAL 2)
-    message("Foxy or newer rclcpp detected")
-    add_compile_definitions(POST_FOXY)
-endif(rclcpp_VERSION_MAJOR GREATER_EQUAL 2)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
@@ -86,6 +82,12 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/kinematics_node.py
   DESTINATION lib/${PROJECT_NAME}
+)
+
+# Install launch files
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_package()
