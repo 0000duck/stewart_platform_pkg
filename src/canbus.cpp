@@ -8,7 +8,7 @@ CANbus::CANbus()
         perror("Socket");
     }
 
-    strcpy(ifr.ifr_name, "vcan0");
+    strcpy(ifr.ifr_name, "can0");
     ioctl(this->_socket, SIOCGIFINDEX, &ifr);
 
     memset(&addr, 0, sizeof(addr));
