@@ -16,6 +16,8 @@
   <build_depend>qtbase5-dev</build_depend>
   <build_depend>qt5-qmake</build_depend>
 
+  <depend>can-utils</depend>
+
   <exec_depend>libqt5-core</exec_depend>
   <exec_depend>rclcpp</exec_depend>
   <exec_depend>rclpy</exec_depend>

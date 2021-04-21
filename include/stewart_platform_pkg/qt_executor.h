@@ -22,13 +22,8 @@
 #include "rclcpp/rate.hpp"
 #include "rclcpp/visibility_control.hpp"
 
-#ifdef POST_FOXY
-  using Executor = rclcpp::Executor;
-  using ExecutorOptions = rclcpp::ExecutorOptions;
-#else
-    using Executor = rclcpp::executor::Executor;
-    using ExecutorOptions = rclcpp::executor::ExecutorArgs;
-#endif
+using Executor = rclcpp::Executor;
+using ExecutorOptions = rclcpp::ExecutorOptions;
 
 /// Single-threaded executor implementation
 // This is the default executor created by rclcpp::spin.
