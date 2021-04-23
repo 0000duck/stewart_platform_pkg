@@ -30,10 +30,10 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # Include Cpp "include" directory and Qt directories
 include_directories(
-  include/stewart_platform_pkg
-  ${rclcpp_INCLUDE_DIRS}
-	${Qt5Core_INCLUDE_DIRS}
-	${Qt5Quick_INCLUDE_DIRS}
+    include/stewart_platform_pkg
+    ${rclcpp_INCLUDE_DIRS}
+    ${Qt5Core_INCLUDE_DIRS}
+    ${Qt5Quick_INCLUDE_DIRS}
 )
 
 # Create Cpp executable

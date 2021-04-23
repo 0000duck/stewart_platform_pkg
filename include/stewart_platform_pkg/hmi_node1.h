@@ -27,7 +27,7 @@ class HmiNode : public QObject, public rclcpp::Node
 
     public:
         HmiNode(QObject* parent = nullptr);
-        virtual ~HmiNode() {};
+        virtual ~HmiNode() = default;
 
         void sample_sine(std::vector<std::vector<float>>& dof);
 

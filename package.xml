@@ -17,6 +17,8 @@
   <build_depend>qt5-qmake</build_depend>
 
   <depend>can-utils</depend>
+  <depend>qml-module-qtquick2</depend>
+  <depend>qml-module-qtquick-controls</depend>
 
   <exec_depend>libqt5-core</exec_depend>
   <exec_depend>rclcpp</exec_depend>
